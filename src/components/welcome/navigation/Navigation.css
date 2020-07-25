@@ -24,6 +24,7 @@
 
 .navigation-item {
     cursor: pointer;
+    text-decoration: none;
 }
 
 .navigation-item:hover {

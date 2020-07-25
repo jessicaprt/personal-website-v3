@@ -9,7 +9,7 @@ export class Navigation extends React.Component {
         <div className="navigation-line-wrapper">
           <div className="navigation-line"></div>
         </div>
-          <div className="padded-2x navigation-item">about me.</div>
+          <a href="/about-me" className="padded-2x navigation-item gray-font--1">about me.</a>
       </div>
     );
   }

@@ -1,0 +1,57 @@
+.about-description {
+  text-indent: 2rem;
+}
+
+.about-image {
+  width: 100%;
+}
+
+.about-image-container {
+  bottom: 10px;
+  position: absolute;
+  width: inherit;
+}
+
+.about-image-title {
+  width: 100%;
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.about-image-wrapper {
+  width: 100%;
+  position: relative;
+}
+
+.about-nav {
+  font-size: 30px;
+}
+
+.about-nav a {
+  text-decoration: none;
+}
+
+.about-nav-container {
+  display: inline-flex;
+  width: 100%;
+  overflow: hidden;
+  transform: translateY(20vh);
+}
+
+.about-nav-line {
+  height: 2px;
+  width: 100%;
+  transform: translateY(22px);
+  margin-left: 20px;
+  background-color: #000;
+}
+
+.about-section-1 {
+  height: 30vh;
+}
+
+.about-image-wrapper,
+.about-section-2 {
+  height: 40vh;
+}

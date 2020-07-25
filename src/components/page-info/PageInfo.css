@@ -1,0 +1,35 @@
+.page-info-nav-container {
+  position: absolute;
+  bottom: 20px;  
+  display: inline-flex;
+}
+
+.page-info-about-nav {
+  font-size: 30px;
+}
+
+.page-info-about-nav a {
+  text-decoration: none;
+}
+
+.page-info-nav-line {
+  height: 1px;
+  width: 300px;
+  background-color: #000;
+  margin-left: 20px;
+  transform: translateY(22px);
+}
+
+.page-info-section--1 {
+  height: 20vh;
+  position: relative;
+}
+
+.page-info-section--2 {
+}
+
+.page-info-title {
+  width: 100%;
+  text-align: center;
+  font-size: 50px;
+}

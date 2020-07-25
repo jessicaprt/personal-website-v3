@@ -22,7 +22,7 @@ export class CustomFooter extends React.Component {
               { footerLinks.map((item: IFooterLink) => {
                 return (
                   <div className="padded-1y font--alegreya" key={item.key}>
-                    <p className="footer-item-title">{item.title}</p>
+                    <a href={item.link} className="white-font footer-item-title">{item.title}</a>
                   </div>
                 )
               })}
@@ -32,7 +32,7 @@ export class CustomFooter extends React.Component {
               <div className="footer-logos">
                 { footerLogos.map((logoItem: IFooterLogo) => {
                   return (
-                    <div className="footer-logo-image">
+                    <div className="footer-logo-image" key={logoItem.key}>
                       {logoItem.openNewTab 
                         ? <a href={logoItem.link} target="__blank"><img className="footer-logo-image" src={logoItem.imageUrl} /></a>
                         : <a href={logoItem.link}><img className="footer-logo-image" src={logoItem.imageUrl} /></a>

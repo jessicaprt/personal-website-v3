@@ -22,7 +22,7 @@ export class Welcome extends React.Component {
               <div className="welcome-image"></div>
             </Grid>
             <Grid className="padded-4y padded-6x gray-font--1" item xs={6}>
-              <h1 className="font--alegreya">Welcome.</h1>
+              <h1 className="font--alegreya welcome-title">Welcome.</h1>
               <p className="font--roboto">{WELCOME.description}</p>
             </Grid>
           </Grid>
