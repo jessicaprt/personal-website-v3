@@ -1,0 +1,36 @@
+.footer-container {
+  padding-top: 30px;
+}
+
+.footer-item-title {
+  font-size: 18px;
+  margin: 0;
+  cursor: pointer;
+}
+
+.footer-item-title:hover {
+  opacity: 0.5;
+}
+
+.footer-copyright-info {
+  padding-top: 20px;
+}
+
+.footer-logos {
+  display: inline-flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.footer-logo-image {
+  padding: 0 10px;
+}
+
+.footer-logo-image:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.footer-logo-image img {
+  width: 50px;
+}

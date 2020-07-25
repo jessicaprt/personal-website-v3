@@ -1,0 +1,29 @@
+.highlights-image {
+  background-image: url(./assets/image--3.png);
+  background-size: cover;
+}
+
+.highlights-title-container {
+  height: 80vh;
+  overflow: hidden;    
+  position: absolute;
+  right: 0px;
+}
+
+.highlights-title {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.highlights-line {
+  width: 5px;
+  height: 50vh;
+  margin-top: 20px;
+  margin-left: 25px;
+}
+
+.highlights-list {
+  padding-right: 60px;
+}

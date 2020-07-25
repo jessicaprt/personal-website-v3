@@ -1,0 +1,31 @@
+.navigation-wrapper {
+    width: 100%;
+    font-size: 30px;
+    display: inline-flex;
+    justify-content: flex-end;
+}
+
+.navigation-line-wrapper,
+.navigation-line {
+    width: 100px;
+}
+
+.navigation-line-wrapper {
+    position: relative;
+}
+
+.navigation-line {
+    height: 2px;
+    background-color: black;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.navigation-item {
+    cursor: pointer;
+}
+
+.navigation-item:hover {
+    opacity: 0.3;
+}

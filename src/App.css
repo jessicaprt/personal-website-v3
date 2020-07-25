@@ -1,38 +1,97 @@
-.App {
-  text-align: center;
+/** WHITE **/
+
+.white-background { 
+  background-color: #ffffff;
+}
+.white-font { 
+  color: #ffffff;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+/** PURPLE **/
+
+.purple-background {
+  background-color: #b3a8b8;
+}
+.purple-font {
+  color: #b3a8b8;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+
+/** PURPLE SECONDARY **/
+.dark-purple-background {
+  background-color: #6d6479;
 }
 
-.App-header {
-  background-color: #282c34;
+
+/** GRAY-1 **/
+
+.gray-font--1 {
+  color: #5b5b5b;
+}
+.gray-box--1 {
+  border-color: #5b5b5b;
+}
+.gray-background--1 {
+  background-color: #5b5b5b;
+}
+
+/** FONTS **/
+
+.font--alegreya {
+  font-family: 'Alegreya', serif;
+}
+.font--sacramento {
+  font-family: 'Sacramento', cursive;
+}
+.font--roboto {
+  font-family: 'Roboto', sans-serif;
+}
+
+
+/** PADDING **/
+.padded-1y {
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+}
+
+.padded-2y {
+  padding-top: 20px !important;
+  padding-bottom: 20px !important;
+}
+.padded-2x {
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+}
+.padded-4y {
+  padding-top: 40px !important;
+  padding-bottom: 40px !important;
+}
+.padded-4x {
+  padding-left: 40px !important;
+  padding-right: 40px !important;
+}
+.padded-6y {
+  padding-top: 60px !important;
+  padding-bottom: 60px !important;
+}
+.padded-6x {
+  padding-left: 60px !important;
+  padding-right: 60px !important;
+}
+
+
+/** SECTIONS **/
+
+.section--wrapper {
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/** GRID **/
+
+.grid-container {
+  flex-grow: 1;
+  align-content: center;
 }
