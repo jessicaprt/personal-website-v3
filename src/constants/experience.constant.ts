@@ -3,17 +3,11 @@ import { IExperience } from '../models/experience.interface';
 export const EXPERIENCE: IExperience[] = [
   {
     key: 'experience--1',
-    title: 'Lorem ipsum',
-    description: 'dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. '
+    title: 'Spoonity Inc.',
+    description: 'Full Stack Developer. Took over development on the Spoonity merchant dashboard by working on the UI as well as API support.'
   }, {
     key: 'experience--2',
-    title: 'Ut enim ad minim',
-    description: 'veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
-  }, {
-    key: 'experience--3',
-    title: 'Duis aute',
-    description: 'irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'
+    title: 'ARC Resources Ltd.',
+    description: 'Information Systems Summer Student. Did research and development on migrating in-house applications to cloud-based applications by modifying the continuous development and continuous integration structures and build scripts.'
   }
-
-
 ];

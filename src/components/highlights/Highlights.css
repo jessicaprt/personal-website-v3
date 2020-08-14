@@ -3,6 +3,10 @@
   background-size: cover;
 }
 
+.highlights-item {
+  padding: 10px
+}
+
 .highlights-title-container {
   height: 80vh;
   overflow: hidden;    

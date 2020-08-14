@@ -24,10 +24,27 @@ export class PageInfo extends React.Component {
             <div className="page-info-title font--sacramento white-font padded-4y">
               Page Info
             </div>
+          </Container>
+        </div>
 
+        <div className="page-info-section--3">
+          <Container>
+            <div className="page-info-body padded-4y">
+              <img src="assets/page-info--image-1.png"/>
+            </div>
+          </Container>
+        </div>
+
+        <div className="page-info-section--4 padded-4y">
+          <Container>
+            <div className="page-info--1 gray-font--1">
+              <p>All the fonts used are from <a href="https://fonts.google.com/">Google Fonts</a>. All the images on 
+              the main page are from <a href="https://www.canva.com/">Canva</a>.</p>
+            </div>
           </Container>
         </div>
       </div>
+
     )
   }
 }

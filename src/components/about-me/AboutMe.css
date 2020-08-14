@@ -1,5 +1,16 @@
 .about-description {
   text-indent: 2rem;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.about-title {
+  text-align: center;
+  padding-top: 100px;
+}
+
+.about-grid {
+  margin: 0 auto;
 }
 
 .about-image {
@@ -10,6 +21,16 @@
   bottom: 10px;
   position: absolute;
   width: inherit;
+}
+
+.about-image--row {
+  display: flex;
+  justify-content: center;
+}
+
+.about-image--row img {
+  max-height: 200px;
+  padding: 10px
 }
 
 .about-image-title {
@@ -54,4 +75,8 @@
 .about-image-wrapper,
 .about-section-2 {
   height: 40vh;
+}
+
+.about-image--row-1 img {
+  width: 100%;
 }

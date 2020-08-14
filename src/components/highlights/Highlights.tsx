@@ -23,7 +23,7 @@ export class Highlights extends React.Component {
               <ul className="highlights-list">
                 {HIGHLIGHTS.map((highlights: IHighlight) => {
                   return(
-                    <li key={highlights.key}>{highlights.description}</li>
+                    <li key={highlights.key} className="highlights-item">{highlights.description}</li>
                   )
                 })}
               </ul>

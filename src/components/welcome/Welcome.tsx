@@ -7,11 +7,40 @@ import { Navigation } from './navigation/Navigation';
 import './Welcome.css';
 
 export class Welcome extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      style1: 'nav-bar'
+    };
+
+    this.handleScroll = this.handleScroll.bind(this);
+  }
+
+  componentDidMount() {
+    window.addEventListener('scroll', this.handleScroll);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this.handleScroll);
+  }
+
+  handleScroll() {
+    const scrollTop = document.documentElement.scrollTop;
+    const currentStyle = this.state['style1'];
+  }
+  
+  setStyle1(className: string) {
+    this.setState({
+      navStyle: className
+    });
+  }
+
   render() {
     return (
       <div className="section--wrapper welcome-wrapper">
         <div className="purple-box--1 purple-background">
-          <div className="welcome-box-text white-font font--alegreya">Jessica &nbsp;</div>
+          <div className="welcome-box-text white-font font--alegreya">Jessica Antonious &nbsp;</div>
         </div>
         <div className="white-vert--1 white-background"></div>
         <Container className="padded-6y">

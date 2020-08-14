@@ -12,6 +12,15 @@
   text-decoration: none;
 }
 
+.page-info-body {
+  width: 100%;
+  text-align: center;
+}
+
+.page-info-body img {
+  width: 600px;
+}
+
 .page-info-nav-line {
   height: 1px;
   width: 300px;
@@ -25,7 +34,8 @@
   position: relative;
 }
 
-.page-info-section--2 {
+.page-info-section--4 {
+  text-align: left;
 }
 
 .page-info-title {
