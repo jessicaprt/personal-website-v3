@@ -29,6 +29,14 @@
     position: relative;
 }
 
+.experience-hide {
+    opacity: 0;
+}
+
+.experience-show {
+  animation: fadeInAnimation ease 1s; 
+}
+
 .purple-box--2 {
     position: absolute;
     width: 100%;

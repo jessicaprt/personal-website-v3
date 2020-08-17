@@ -9,31 +9,6 @@ import './Welcome.css';
 export class Welcome extends React.Component {
   constructor(props) {
     super(props);
-
-    this.state = {
-      style1: 'nav-bar'
-    };
-
-    this.handleScroll = this.handleScroll.bind(this);
-  }
-
-  componentDidMount() {
-    window.addEventListener('scroll', this.handleScroll);
-  }
-
-  componentWillUnmount() {
-    window.removeEventListener('scroll', this.handleScroll);
-  }
-
-  handleScroll() {
-    const scrollTop = document.documentElement.scrollTop;
-    const currentStyle = this.state['style1'];
-  }
-  
-  setStyle1(className: string) {
-    this.setState({
-      navStyle: className
-    });
   }
 
   render() {
@@ -52,7 +27,7 @@ export class Welcome extends React.Component {
             </Grid>
             <Grid className="padded-4y padded-6x gray-font--1" item xs={6}>
               <h1 className="font--alegreya welcome-title">Welcome.</h1>
-              <p className="font--roboto">{WELCOME.description}</p>
+              <p className="font--roboto welcome-description">{WELCOME.description}</p>
             </Grid>
           </Grid>
         </Container>

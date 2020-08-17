@@ -95,3 +95,22 @@
   flex-grow: 1;
   align-content: center;
 }
+
+/** ANIMATION STYLE **/
+.style-hidden {
+  opacity:0
+}
+
+.style-show {
+  opacity:1;
+  animation: 1s ease;
+}
+
+@keyframes fadeInAnimation { 
+  0% { 
+      opacity: 0; 
+  } 
+  100% { 
+      opacity: 1; 
+  } 
+} 

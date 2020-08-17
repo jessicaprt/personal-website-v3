@@ -31,3 +31,28 @@
 .highlights-list {
   padding-right: 60px;
 }
+
+.highlights-section {
+  position: relative;
+}
+
+.highlights-logo-container {
+  display: flex;
+  position: absolute;
+  bottom: 100px;
+  right: 150px;
+
+}
+
+.highlights-logo-container img {
+  max-height: 80px;
+  margin: 0 5px;
+}
+
+.highlights-hide {
+  opacity: 0;
+}
+
+.highlights-show {
+  animation: fadeInAnimation ease 1s; 
+}

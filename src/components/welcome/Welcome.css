@@ -7,7 +7,6 @@
 }
 
 .welcome-image {
-  background-color: black;
   background-image: url(assets/image--1.png);
   background-size: cover;
   position: absolute;
@@ -55,4 +54,10 @@
 
 .welcome-title {
   font-size: 50px;
+}
+
+.welcome-image,
+.welcome-title,
+.welcome-description {
+  animation: fadeInAnimation ease 2s; 
 }

@@ -30,7 +30,8 @@
 
 .about-image--row img {
   max-height: 200px;
-  padding: 10px
+  padding: 10px;
+  cursor: pointer;
 }
 
 .about-image-title {
@@ -79,4 +80,37 @@
 
 .about-image--row-1 img {
   width: 100%;
+}
+
+.about-image-modal-wrapper {
+  height: 100vh;
+  position: relative;
+  color: #fff;
+}
+
+.about-image-modal-container {
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  text-align: center;
+}
+
+.about-image-modal-wrapper img {
+  max-height: 80vh;
+}
+
+.about-image-modal-cose {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+}
+
+.about-loading-overlay {
+  background-color: #fff;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
 }

@@ -38,8 +38,52 @@ export class PageInfo extends React.Component {
         <div className="page-info-section--4 padded-4y">
           <Container>
             <div className="page-info--1 gray-font--1">
-              <p>All the fonts used are from <a href="https://fonts.google.com/">Google Fonts</a>. All the images on 
-              the main page are from <a href="https://www.canva.com/">Canva</a>.</p>
+              <div className="page-info-subsection padded-1y">
+                <h2 className="font--sacramento">This site</h2>
+                <p>This site was built using React. Click here to view the source code.</p>
+              </div>
+              
+              <div className="page-info-subsection padded-1y">
+                <h2 className="font--sacramento">Fonts</h2>
+                <p>All the fonts used are from <a href="https://fonts.google.com/">Google Fonts</a>.</p>
+              </div>
+              
+              <div className="page-info-subsection padded-1y">
+                <h2 className="font--sacramento">Images</h2>
+                <p>All the images on the main page are from <a href="https://www.canva.com/">Canva</a>. All the images in the about me page my own images.</p>
+              </div>
+
+              <div className="page-info-subsection padded-1y">
+                <h2 className="font--sacramento">Site mockups</h2>
+                <p>Here are some of the sample mock-ups i was using as a reference when building the page:</p>
+
+                <div className="padded-2y">
+                  <Grid container spacing={2} className="padded-1y">
+                    <Grid item xs={4} className="page-info--mockup-image">
+                      <img src="assets/web-mockup--1.png"></img>
+                    </Grid>
+                    <Grid item xs={4} className="page-info--mockup-image">
+                      <img src="assets/web-mockup--2.png"></img>
+                    </Grid>
+                    <Grid item xs={4} className="page-info--mockup-image">
+                      <img src="assets/web-mockup--3.png"></img>
+                    </Grid>
+                  </Grid>
+
+                  <Grid container spacing={2} className="padded-2y">
+                    <Grid item xs={4} className="page-info--mockup-image">
+                      <img src="assets/web-mockup--4.png"></img>
+                    </Grid>
+                    <Grid item xs={4} className="page-info--mockup-image">
+                      <img src="assets/web-mockup--5.png"></img>
+                    </Grid>
+                    <Grid item xs={4} className="page-info--mockup-image">
+                      <img src="assets/web-mockup--6.png"></img>
+                    </Grid>
+                  </Grid>
+                </div>
+              </div>
+
             </div>
           </Container>
         </div>
