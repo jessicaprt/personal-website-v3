@@ -13,6 +13,6 @@ export const FOOTER_LINKS: IFooterLink[] = [
     key: 'footer-3',
     title: 'Contact',
     subtitle: 'jessica@prieto.ca',
-    link: '/'
+    link: 'mailto:jessica@prieto.ca'
   }
 ];
