@@ -1,7 +1,7 @@
 import React from 'react';
 import Container from '@material-ui/core/Container';
 import Grid from '@material-ui/core/Grid';
-import { WELCOME } from '../../constants/welcome.constant';
+import { WELCOME } from '../../../constants/welcome.constant';
 import { Navigation } from './navigation/Navigation';
 
 import './Welcome.css';
@@ -21,11 +21,13 @@ export class Welcome extends React.Component {
         <Container className="padded-6y">
           <Navigation/>
           <Grid className="grid-container" container spacing={2}>            
-            <Grid className="welcome-image-wrapper padded-4y" item xs={6}>
-              <div className="welcome-image--offset-box gray-box--1"></div>
-              <div className="welcome-image"></div>
+            <Grid item xs={12} md={6}>
+              <div className="welcome-image-wrapper padded-4y">
+                <div className="welcome-image--offset-box gray-box--1"></div>
+                <div className="welcome-image"></div>
+              </div>
             </Grid>
-            <Grid className="padded-4y padded-6x gray-font--1" item xs={6}>
+            <Grid className="padded-4y padded-6x gray-font--1" item xs={12} md={6}>
               <h1 className="font--alegreya welcome-title">Welcome.</h1>
               <p className="font--roboto welcome-description">{WELCOME.description}</p>
             </Grid>

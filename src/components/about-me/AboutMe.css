@@ -26,6 +26,7 @@
 .about-image--row {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .about-image--row img {
@@ -113,4 +114,24 @@
   width: 100vw;
   height: 100vh;
   overflow: hidden;
+}
+
+
+@media (max-width: 600px) {
+  .about-image-container {
+    text-align: center;
+  }
+  .about-image {
+    max-width: 150px;
+    margin: 0 auto;
+  }
+
+  .about-image--row img {
+    height: initial;
+  }
+
+  .about-description {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }

@@ -61,3 +61,48 @@
 .welcome-description {
   animation: fadeInAnimation ease 2s; 
 }
+
+.welcome-image-wrapper {
+  min-height: 300px;
+}
+
+@media (max-width: 600px) {
+  .welcome-image {
+    width: 200px;
+    height: 200px;
+    right: 40px;
+  }
+  .welcome-image--offset-box {
+    width: 188px;
+    height: 188px;
+    right: 20px;
+  }
+  .purple-box--1 {
+    width: 60%;
+  }
+  .welcome-box-text {
+    font-size: 30px;
+  }
+  .welcome-title {
+    margin: 0;
+  }
+}
+
+@media (max-width: 315px) {
+  .welcome-image {
+    width: 150px;
+    height: 150px;
+    right: 40px;
+  }
+  .welcome-image--offset-box {
+    width: 138px;
+    height: 138px;
+    right: 20px;
+  }
+  .welcome-image-wrapper {
+    min-height: 200px;
+  }
+  .welcome-box-text {
+    display: none;
+  }
+}

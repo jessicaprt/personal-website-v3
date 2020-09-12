@@ -1,0 +1,69 @@
+.experience-image {
+    background-image: url(./assets/image--2.png);
+    background-size: cover;
+    min-height: 300px;
+}
+
+.experience-list {
+    margin-top: 200px;
+}
+
+.experience-title-container {
+    display: flex;
+    width: 100%;
+    font-size: 60px;
+    align-items: center;
+    transform: translateY(120px);
+}
+
+.experience-line {
+    width: 100%;
+    height: 3px;
+    margin-left: 20px;
+}
+
+.experience-title-container p {
+    margin: 0;
+}
+
+.experience-wrapper {
+    position: relative;
+}
+
+.experience-hide {
+    opacity: 0;
+}
+
+.experience-show {
+  animation: fadeInAnimation ease 1s; 
+}
+
+.purple-box--2 {
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    z-index: -1;
+}
+
+@media (max-width: 600px) {
+    .purple-box--2 {
+        height: 200px;
+    }
+
+    .experience-title-container {
+        transform: translateY(20px);
+    }
+
+    .experience-title-container p {
+        font-size: 50px;
+    }
+    
+    .experience-line {
+        height: 2px;
+    }
+
+    .experience-list {
+        margin-top: 100px;
+    }
+    
+}

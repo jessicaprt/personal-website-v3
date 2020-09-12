@@ -35,3 +35,12 @@
 .footer-logo-image img {
   width: 50px;
 }
+
+@media (max-width: 600px) {
+  .footer-logo-image img {
+    width: 30px;
+  }
+  .footer-logo-image {
+    padding: 0 5px;
+  }
+}

@@ -1,52 +1,20 @@
 import React from 'react';
 import './App.css';
 
-import { Welcome } from './components/welcome/Welcome';
-import { Experience } from './components/experience/Experience';
-import { Highlights } from './components/highlights/Highlights';
-import { CustomFooter } from './components/footer/CustomFooter';
-
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { HashRouter, Route } from 'react-router-dom';
 import { AboutMe } from './components/about-me/AboutMe';
 import { PageInfo } from './components/page-info/PageInfo';
+import { Homepage } from './components/homepage/Homepage';
 
 function App() {
   return (
-    <BrowserRouter basename={process.env.PUBLIC_URL}>
+    <HashRouter basename={process.env.PUBLIC_URL}>
       <div>
-        <Switch>
-          <Route exact={true} 
-            path='/'
-            render={() => (
-              <div className="App">
-                <Welcome/>
-                <Experience/>
-                <Highlights/>
-                <CustomFooter/>
-            </div>
-          )}/>
-
-          <Route exact={true} 
-            path='/about-me'
-            render={() => (
-              <div className="App">
-                <AboutMe/>
-                <CustomFooter/>
-              </div>
-          )}/>
-
-          <Route exact={true} 
-            path='/page-info'
-            render={() => (
-              <div className="App">
-                <PageInfo/>
-                <CustomFooter/>
-              </div>
-          )}/>
-        </Switch>
+          <Route exact path='/' component={Homepage} />
+          <Route path='/about-me' component={AboutMe} />
+          <Route path='/page-info' component={PageInfo} />
       </div>
-    </BrowserRouter>
-    
+    </HashRouter>
   );
 }
 

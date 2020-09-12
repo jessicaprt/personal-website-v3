@@ -16,7 +16,6 @@
 
 .navigation-line {
     height: 2px;
-    background-color: black;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -29,4 +28,9 @@
 
 .navigation-item:hover {
     opacity: 0.3;
+}
+
+
+.navigation-item a {
+    text-decoration: none;
 }

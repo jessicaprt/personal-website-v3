@@ -4,11 +4,11 @@ import Grid from '@material-ui/core/Grid';
 
 import { FOOTER_LINKS as footerLinks} from '../../constants/footer-links.constant';
 import { FOOTER_LOGOS as footerLogos} from '../../constants/footer-logos.constant';
-
 import { IFooterLink } from '../../models/footer-link.interface';
+import { IFooterLogo } from '../../models/footer-logo.interface';
+import { Link } from 'react-router-dom';
 
 import './CustomFooter.css';
-import { IFooterLogo } from '../../models/footer-logo.interface';
 
 export class CustomFooter extends React.Component {
   render() {
@@ -18,17 +18,20 @@ export class CustomFooter extends React.Component {
       <footer className="footer-wrapper dark-purple-background">
         <Container className="footer-container white-font">
           <Grid className="grid-container" container spacing={2}>
-            <Grid className="padded-4x" item xs={4}>
+            <Grid className="padded-4x" item xs={12} md={4}>
               { footerLinks.map((item: IFooterLink) => {
                 return (
                   <div className="padded-1y font--alegreya" key={item.key}>
-                    <a href={item.link} className="white-font footer-item-title">{item.title}</a>
+                    {item.isInternal
+                      ? <Link to={item.link} className="white-font footer-item-title">{item.title}</Link>
+                      : <a href={item.link} className="white-font footer-item-title">{item.title}</a>
+                    }
                   </div>
                 )
               })}
 
             </Grid>
-            <Grid className="padded-4x padded-4y" item xs={8}>
+            <Grid className="padded-4x padded-4y" item xs={12} md={8}>
               <div className="footer-logos">
                 { footerLogos.map((logoItem: IFooterLogo) => {
                   return (

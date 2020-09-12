@@ -3,4 +3,5 @@ export interface IFooterLink {
   link: string;
   title: string;
   subtitle?: string;
+  isInternal?: boolean;
 }

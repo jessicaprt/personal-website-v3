@@ -3,7 +3,9 @@
 .white-background { 
   background-color: #ffffff;
 }
-.white-font { 
+.white-font, 
+.white-font a,
+.white-font a:visited { 
   color: #ffffff;
 }
 
@@ -27,7 +29,9 @@
 
 /** GRAY-1 **/
 
-.gray-font--1 {
+.gray-font--1,
+.gray-font--1 a,
+.gray-font--1 a:visited {
   color: #5b5b5b;
 }
 .gray-box--1 {

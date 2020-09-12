@@ -4,11 +4,13 @@ export const FOOTER_LINKS: IFooterLink[] = [
   {
     key: 'footer-1',
     title: 'About Me',
-    link: '/about-me'
+    link: '/about-me',
+    isInternal: true
   }, {
     key: 'footer-2',
     title: 'Page Info',
-    link: '/page-info'
+    link: '/page-info',
+    isInternal: true
   }, {
     key: 'footer-3',
     title: 'Contact',

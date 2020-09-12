@@ -2,10 +2,10 @@ import React, { RefObject } from 'react';
 import Container from '@material-ui/core/Container';
 import Grid from '@material-ui/core/Grid';
 
-import { EXPERIENCE } from '../../constants/experience.constant'
+import { EXPERIENCE } from '../../../constants/experience.constant'
 
 import './Experience.css';
-import { IExperience } from '../../models/experience.interface';
+import { IExperience } from '../../../models/experience.interface';
 
 export class Experience extends React.Component<{}, {display: string}> {
   experienceTitleRef: RefObject<any>;
@@ -31,8 +31,8 @@ export class Experience extends React.Component<{}, {display: string}> {
 
   handleScroll(event) {
     try {
-      const offset = this.experienceTitleRef.current.offsetTop - (window.screen.height*0.4);
-      if (window.scrollY > offset) {
+      const offset = this.experienceTitleRef.current.offsetTop;
+      if (window.scrollY <= offset+500) {
         this.setState({
           display: 'experience-show'
         })
@@ -48,7 +48,7 @@ export class Experience extends React.Component<{}, {display: string}> {
         <div className="purple-box--2 purple-background"></div>
         <Container className="padded-6y">
           <Grid className="grid-container" container spacing={2}>
-            <Grid className="padded-4x" item xs={6}>
+            <Grid className="padded-4x" item xs={12} md={6}>
               <div className={this.state.display + " experience-title-container"}>
                 <p className="font--sacramento white-font">Experience</p>
                 <div className="experience-line white-background"></div>
@@ -61,8 +61,7 @@ export class Experience extends React.Component<{}, {display: string}> {
               </div>
             </Grid>
 
-            <Grid className="padded-6x experience-image" item xs={6}>
-              {/* <div className="experience-image"></div> */}
+            <Grid className="padded-6x experience-image" item xs={12} md={6}>
             </Grid>
           </Grid>
         </Container>
